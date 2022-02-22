@@ -19,7 +19,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
+	"github.com/CherryNetwork/go-substrate-rpc-client/v4/scale"
 )
 
 // EventClaimsClaimed is emitted when an account claims some DOTs
@@ -269,6 +269,11 @@ type EventStakingWithdrawn struct {
 	Stash  AccountID
 	Amount U128
 	Topics []Hash
+}
+
+type EventQueuedDataToAdd struct {
+	Phase Phase
+	Who   AccountID
 }
 
 // EventSystemExtrinsicSuccessV8 is emitted when an extrinsic completed successfully

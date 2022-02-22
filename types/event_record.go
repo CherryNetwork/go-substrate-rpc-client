@@ -23,7 +23,7 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
+	"github.com/CherryNetwork/go-substrate-rpc-client/v4/scale"
 	"github.com/ethereum/go-ethereum/log"
 )
 
@@ -87,6 +87,7 @@ type EventRecords struct {
 	Staking_Bonded                     []EventStakingBonded                     //nolint:stylecheck,golint
 	Staking_Unbonded                   []EventStakingUnbonded                   //nolint:stylecheck,golint
 	Staking_Withdrawn                  []EventStakingWithdrawn                  //nolint:stylecheck,golint
+	Queued_Data_To_Add                 []EventQueuedDataToAdd                   //nolint:stylecheck,golint
 	System_ExtrinsicSuccess            []EventSystemExtrinsicSuccess            //nolint:stylecheck,golint
 	System_ExtrinsicFailed             []EventSystemExtrinsicFailed             //nolint:stylecheck,golint
 	System_CodeUpdated                 []EventSystemCodeUpdated                 //nolint:stylecheck,golint
